@@ -5,3 +5,6 @@ Website Code List
     .navbar
     .login
     .signup
+
+
+NOTE: INCLUDES Folder is connected to the LOGIN & SIGNUP
