@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Background and Shadow */
+nav {
+    background-color: rgba(90, 57, 30, 0.85);
+    
+}
+
+/* Navbar Sizing */
+nav ul {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Navbar List Items */
+nav li {
+    height: 60px;
+}
+
+/* Navbar Text */
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgba(249, 241, 217);
+}
+
+/* Navbar Hover Effect with Rounded Edges */
+nav a:hover {
+    background-color: rgb(252, 196, 124);
+    transition: background-color 0.3s ease, border-radius 0.3s ease; /* Smooth transition */
+}
+
+/* Style the logo container */
+nav ul li:first-child {
+    height: 60px; /* Adjust as needed */
+    padding: 0;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
+/* Style the logo image itself */
+nav ul li:first-child img {
+    height: 70px; /* Set a fixed height */
+    width: auto; /* Maintains aspect ratio */
+}
+
+nav ul li a {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Sidebar Design */
+.sidebar, .accbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    backdrop-filter: blur(8px);
+    display: none; /* Start hidden */
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Sidebar-specific styles */
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+/* Account-specific styles */
+.accbar li {
+    width: 100%;
+}
+
+.accbar a {
+    width: 100%;
+}
+
+/* Display Feature of the Menu */
+.menu-button, .acc-button {
+    display: none;
+}
+
+/* Responsive display */
+@media (max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+    .menu-button, .acc-button {
+        display: block;
+    }
+}
+
+/* Smaller screen adjustments */
+@media (max-width: 400px) {
+    .sidebar, .accbar {
+        width: 100%;
+    }
+}
